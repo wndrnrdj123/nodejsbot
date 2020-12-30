@@ -1,19 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.env.token;
-
-client.on('ready', () => {
-  console.log('켰다.');
-});
-
-client.on('message', (message) => {
-  if(message.content === 'ping') {
-    message.reply('pong');
-  }
-});
-
-client.login(token);const Discord = require('discord.js');
-const client = new Discord.Client();
 const token = process.argv.length == 2 ? process.env.token : "";
 const welcomeChannelName = "안녕하세요";
 const byeChannelName = "안녕히가세요";
